@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './CountryPage.module.scss'
 import { useParams } from 'react-router-dom';
 import ReactPlayer from "react-player"
+import Map from '../Map/Map'
 
 const CountryPage = () => {
     console.log('chetamDEEEE')
@@ -254,6 +255,7 @@ const CountryPage = () => {
                 url={countryCards[id-1].videoUrl}
                 controls={true}
             />
+            <Map coords={countryCards[id-1].capitalLocation.coordinates}/>
         </div>
     )
 }
