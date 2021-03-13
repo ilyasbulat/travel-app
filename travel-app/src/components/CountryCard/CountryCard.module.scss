@@ -1,0 +1,8 @@
+.card {
+    width: 140px;
+    height: 200px;
+    background-color: blueviolet;
+    &:hover {
+        background-color: red;
+    }
+}
