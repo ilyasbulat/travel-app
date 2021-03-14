@@ -10,7 +10,7 @@ const MainPage = ({countryCards}) => {
             <div className={styles.cards}>
                 {
                     countryCards.map(card => {
-                        return <CountryCard key={card.id} card={card}/>
+                        return <CountryCard key={card._id} card={card}/>
                     })
                 }
              </div>

@@ -16,3 +16,32 @@
 
 
 }
+
+
+.weather_icon {
+    font-size: 160px;
+    // color: rgb(211, 186, 186);
+    color: red;
+}
+  
+.weather {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-left: 10px;
+    margin-top: 40px;
+    height: 300px;
+}
+  
+.wrapper {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0.5em;
+    padding: 1em;
+    margin-top: 40px;
+}
+  
+.time-weather {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

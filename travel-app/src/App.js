@@ -53,7 +53,7 @@ function App() {
             },
             "imageUrl": "https://www.atlanticcouncil.org/wp-content/uploads/2020/09/Rome-coroavirus-large-1024x683.jpg",
             "videoUrl": "https://www.youtube.com/watch?v=0kXCPo7c63I",
-            "currency": "EUR",
+            "currency": "GBP",
             "ISOCode": "GBR",
             "localizations": [
               {
@@ -155,7 +155,7 @@ function App() {
             },
             "imageUrl": "https://www.atlanticcouncil.org/wp-content/uploads/2020/09/Rome-coroavirus-large-1024x683.jpg",
             "videoUrl": "https://www.youtube.com/watch?v=vIo4gU9MHEM",
-            "currency": "EUR",
+            "currency": "KZT",
             "ISOCode": "KAZ",
             "localizations": [
               {
@@ -223,7 +223,7 @@ function App() {
             },
             "imageUrl": "https://www.atlanticcouncil.org/wp-content/uploads/2020/09/Rome-coroavirus-large-1024x683.jpg",
             "videoUrl": "https://www.youtube.com/watch?v=tV1TxgiZUm0",
-            "currency": "EUR",
+            "currency": "KRW",
             "ISOCode": "KOR",
             "localizations": [
               {
@@ -257,7 +257,7 @@ function App() {
             },
             "imageUrl": "https://www.atlanticcouncil.org/wp-content/uploads/2020/09/Rome-coroavirus-large-1024x683.jpg",
             "videoUrl": "https://www.youtube.com/watch?v=CxuiFNYnEr4",
-            "currency": "EUR",
+            "currency": "JPY",
             "ISOCode": "JPN",
             "localizations": [
               {
