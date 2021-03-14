@@ -52,7 +52,7 @@ function App() {
               "type": "Point"
             },
             "imageUrl": "https://www.atlanticcouncil.org/wp-content/uploads/2020/09/Rome-coroavirus-large-1024x683.jpg",
-            "videoUrl": "https://youtu.be/FlRwssZYRM0",
+            "videoUrl": "https://www.youtube.com/watch?v=0kXCPo7c63I",
             "currency": "EUR",
             "ISOCode": "GBR",
             "localizations": [
@@ -86,7 +86,7 @@ function App() {
               "type": "Point"
             },
             "imageUrl": "https://www.atlanticcouncil.org/wp-content/uploads/2020/09/Rome-coroavirus-large-1024x683.jpg",
-            "videoUrl": "https://youtu.be/FlRwssZYRM0",
+            "videoUrl": "https://www.youtube.com/watch?v=IftfIk-pRwI",
             "currency": "EUR",
             "ISOCode": "ESP",
             "localizations": [
@@ -120,7 +120,7 @@ function App() {
               "type": "Point"
             },
             "imageUrl": "https://www.atlanticcouncil.org/wp-content/uploads/2020/09/Rome-coroavirus-large-1024x683.jpg",
-            "videoUrl": "https://youtu.be/FlRwssZYRM0",
+            "videoUrl": "https://www.youtube.com/watch?v=XhSFK2o-QWM",
             "currency": "EUR",
             "ISOCode": "GRC",
             "localizations": [
@@ -154,27 +154,27 @@ function App() {
               "type": "Point"
             },
             "imageUrl": "https://www.atlanticcouncil.org/wp-content/uploads/2020/09/Rome-coroavirus-large-1024x683.jpg",
-            "videoUrl": "https://youtu.be/FlRwssZYRM0",
+            "videoUrl": "https://www.youtube.com/watch?v=vIo4gU9MHEM",
             "currency": "EUR",
             "ISOCode": "KAZ",
             "localizations": [
               {
                 "lang": "en",
                 "capital": "Nur-Sultan",
-                "description": "Italy (Italian: Italia [iˈtaːlja]), officially the Italian Republic (Italian: Repubblica Italiana [reˈpubːlika itaˈljaːna]), is a country consisting of a peninsula delimited by the Alps and several islands surrounding it. Italy is located in Southern Europe, and is also considered part of Western Europe. A unitary parliamentary republic with Rome as its capital, the country covers a total area of 301,340 km2 (116,350 sq mi) and shares land borders with France, Switzerland, Austria, Slovenia, and the enclaved microstates of Vatican City and San Marino. Italy has a territorial enclave in Switzerland (Campione) and a maritime exclave in Tunisian waters (Lampedusa). With around 60 million inhabitants, Italy is the third-most populous member state of the European Union.",
+                "description": "Kazakhstan, officially the Republic of Kazakhstan, is a transcontinental country mainly located in Central Asia with a smaller portion west of the Ural River in Eastern Europe. It covers a land area of 2,724,900 square kilometres (1,052,100 sq mi), and shares land borders with Russia in the north, China in the east, and Kyrgyzstan, Uzbekistan, and Turkmenistan in the south while also adjoining a large part of the Caspian Sea in the southwest. Kazakhstan does not border Mongolia, although they are only 37 kilometers apart, separated by a short portion of the border between Russia and China.",
                 "name": "Kazakhstan"
               },
               {
                 "lang": "ru",
-                "capital": "Рим",
-                "description": "Ита́лия (итал. Italia [iˈtaːlja]), официальное название — Италья́нская Респу́блика (итал. Repubblica Italiana [reˈpubːlika itaˈljaːna]) — государство в Южной Европе, в центре Средиземноморья. Входит в Евросоюз и НАТО с момента их создания, является третьей по величине экономикой еврозоны.  Граничит с Францией на северо-западе (протяжённость границы — 488 км), Швейцарией (740 км) и Австрией (430 км) — на севере, Словенией — на северо-востоке (232 км).  Внутри территории Италии находятся два государства-анклава: государство Сан-Марино и расположенное внутри территории Рима ассоциированное с Италией государство Ватикан, с каждым из которых Италия имеет внутреннюю границу протяжённостью соответственно 39 км и 3,2 км.  Занимает Апеннинский полуостров, крайний северо-запад Балканского полуострова, Паданскую равнину, южные склоны Альп, острова Сицилия, Сардиния и ряд мелких островов.  На территории Италии находится 55 памятников Всемирного наследия ЮНЕСКО — Италия разделяет с Китаем первое место по их количеству.",
-                "name": "Италия"
+                "capital": "Нур-Султан",
+                "description": "Казахста́н (каз. Қазақстан, Qazaqstan [qɑzɑqˈstɑn] Информация о файле слушать), официальное название — Респу́блика Казахста́н (каз. Қазақстан Республикасы; Qazaqstan Respublikasy), (аббревиатура РК) — государство в центре Евразии, бо́льшая часть которого относится к Азии, меньшая — к Европе. Площадь территории — 2 724 902 км². Население, по оценке государственного комитета по статистике на 1 октября 2020 года, составляет 18 809 210 человек. Плотность населения является одной из самых низких: менее 7 человек на квадратный километр. Столица — Нур-Султан. Крупнейший город с населением 1,977 млн человек — Алма-Ата. Занимает 9-е место в мире по территории, 2-е место среди стран СНГ (после России), 42-е — по объёму ВВП по ППС и 64-е — по численности населения.",
+                "name": "Казахстан"
               },
               {
                 "lang": "fr",
-                "capital": "Madrid",
-                "description": "L'Espagne, en forme longue le royaume d'Espagne (respectivement en espagnol : España Écouter et Reino de España), est un pays d'Europe du Sud — et, selon les définitions, d'Europe de l'Ouest — qui occupe la plus grande partie de la péninsule Ibérique. En 2019, il s'agissait du vingt-huitième pays le plus peuplé du monde, avec 47 millions d'habitants.",
-                "name": "Espagne"
+                "capital": "Noursoultan",
+                "description": "Le Kazakhstan, en forme longue la république du Kazakhstan (en kazakh : Qazaqstan, Қазақстан, /qɑzɑqˈstɑn/ et Qazaqstan Respýblıkasy, Қазақстан Республикасы, en russe : Казахстан, Kazakhstán, /kɐzəxˈstɐn/ et Республика Казахстан, Respoublika Kazakhstán), est un pays situé majoritairement au nord de l'Asie centrale et en partie en Europe de l'Est (à l'ouest du fleuve Oural). Sa capitale est Noursoultan, anciennement nommée Astana.",
+                "name": "Kazakhstan"
               }
             ]
         },
@@ -188,27 +188,27 @@ function App() {
               "type": "Point"
             },
             "imageUrl": "https://www.atlanticcouncil.org/wp-content/uploads/2020/09/Rome-coroavirus-large-1024x683.jpg",
-            "videoUrl": "https://youtu.be/FlRwssZYRM0",
+            "videoUrl": "https://www.youtube.com/watch?v=KglC_fAY9QU",
             "currency": "EUR",
             "ISOCode": "FRA",
             "localizations": [
               {
                 "lang": "en",
                 "capital": "Paris",
-                "description": "Italy (Italian: Italia [iˈtaːlja]), officially the Italian Republic (Italian: Repubblica Italiana [reˈpubːlika itaˈljaːna]), is a country consisting of a peninsula delimited by the Alps and several islands surrounding it. Italy is located in Southern Europe, and is also considered part of Western Europe. A unitary parliamentary republic with Rome as its capital, the country covers a total area of 301,340 km2 (116,350 sq mi) and shares land borders with France, Switzerland, Austria, Slovenia, and the enclaved microstates of Vatican City and San Marino. Italy has a territorial enclave in Switzerland (Campione) and a maritime exclave in Tunisian waters (Lampedusa). With around 60 million inhabitants, Italy is the third-most populous member state of the European Union.",
+                "description": "France (French: [fʁɑ̃s] Listen), officially the French Republic (French: République française), is a country primarily located in Western Europe, consisting of metropolitan France and several overseas regions and territories.[XIII] The metropolitan area of France extends from the Rhine to the Atlantic Ocean and from the Mediterranean Sea to the English Channel and the North Sea. The overseas territories include French Guiana in South America and several islands in the Atlantic, Pacific and Indian Oceans. France borders Belgium, Luxembourg and Germany to the northeast, Switzerland, Monaco and Italy to the east, Andorra and Spain to the south, as well as the Netherlands, Suriname and Brazil in the Americas. The country's eighteen integral regions (five of which are situated overseas) span a combined area of 643,801 km2 (248,573 sq mi) and a total population of 67.4 million (as of February 2021).[12] France is a unitary semi-presidential republic with its capital in Paris, the country's largest city and main cultural and commercial centre. Other major urban areas include Lyon, Marseille, Toulouse, Bordeaux, Lille and Nice. France, including its overseas territories, has the most time zones of any country, with a total of twelve.",
                 "name": "France"
               },
               {
                 "lang": "ru",
-                "capital": "Рим",
-                "description": "Ита́лия (итал. Italia [iˈtaːlja]), официальное название — Италья́нская Респу́блика (итал. Repubblica Italiana [reˈpubːlika itaˈljaːna]) — государство в Южной Европе, в центре Средиземноморья. Входит в Евросоюз и НАТО с момента их создания, является третьей по величине экономикой еврозоны.  Граничит с Францией на северо-западе (протяжённость границы — 488 км), Швейцарией (740 км) и Австрией (430 км) — на севере, Словенией — на северо-востоке (232 км).  Внутри территории Италии находятся два государства-анклава: государство Сан-Марино и расположенное внутри территории Рима ассоциированное с Италией государство Ватикан, с каждым из которых Италия имеет внутреннюю границу протяжённостью соответственно 39 км и 3,2 км.  Занимает Апеннинский полуостров, крайний северо-запад Балканского полуострова, Паданскую равнину, южные склоны Альп, острова Сицилия, Сардиния и ряд мелких островов.  На территории Италии находится 55 памятников Всемирного наследия ЮНЕСКО — Италия разделяет с Китаем первое место по их количеству.",
-                "name": "Италия"
+                "capital": "Париж",
+                "description": "Фра́нция (фр. France, [fʁɑ̃s] Информация о файле слушать), официальное название — Францу́зская Респу́блика[11] (фр. République française, [ʁe.py.blik fʁɑ̃.sɛz] Информация о файле слушать), — трансконтинентальное государство, включающее основную территорию в Западной Европе и ряд заморских регионов и территорий. Столица — Париж. Девиз Республики — «Свобода, равенство, братство», её принцип — правление народа, народом и для народа.",
+                "name": "Франция"
               },
               {
                 "lang": "fr",
-                "capital": "Madrid",
-                "description": "L'Espagne, en forme longue le royaume d'Espagne (respectivement en espagnol : España Écouter et Reino de España), est un pays d'Europe du Sud — et, selon les définitions, d'Europe de l'Ouest — qui occupe la plus grande partie de la péninsule Ibérique. En 2019, il s'agissait du vingt-huitième pays le plus peuplé du monde, avec 47 millions d'habitants.",
-                "name": "Espagne"
+                "capital": "Paris",
+                "description": "La France, en forme longue depuis 1875 la République française, est un État souverain transcontinental dont le territoire métropolitain est situé en Europe de l'Ouest. Ce dernier a des frontières terrestres avec la Belgique, le Luxembourg, l'Allemagne, la Suisse, l'Italie, l'Espagne et les deux principautés d'Andorre et de Monaco. La France dispose aussi d'importantes façades maritimes sur l'Atlantique et la Méditerranée. Son territoire ultramarin s'étend dans les océans Indien, Atlantique et Pacifique ainsi qu'en Amérique du Sud, et a des frontières terrestres avec le Brésil, le Suriname et les Pays-Bas.",
+                "name": "France"
               }
             ]
         },
@@ -222,27 +222,27 @@ function App() {
               "type": "Point"
             },
             "imageUrl": "https://www.atlanticcouncil.org/wp-content/uploads/2020/09/Rome-coroavirus-large-1024x683.jpg",
-            "videoUrl": "https://youtu.be/FlRwssZYRM0",
+            "videoUrl": "https://www.youtube.com/watch?v=tV1TxgiZUm0",
             "currency": "EUR",
             "ISOCode": "KOR",
             "localizations": [
               {
                 "lang": "en",
                 "capital": "Seoul",
-                "description": "Italy (Italian: Italia [iˈtaːlja]), officially the Italian Republic (Italian: Repubblica Italiana [reˈpubːlika itaˈljaːna]), is a country consisting of a peninsula delimited by the Alps and several islands surrounding it. Italy is located in Southern Europe, and is also considered part of Western Europe. A unitary parliamentary republic with Rome as its capital, the country covers a total area of 301,340 km2 (116,350 sq mi) and shares land borders with France, Switzerland, Austria, Slovenia, and the enclaved microstates of Vatican City and San Marino. Italy has a territorial enclave in Switzerland (Campione) and a maritime exclave in Tunisian waters (Lampedusa). With around 60 million inhabitants, Italy is the third-most populous member state of the European Union.",
+                "description": "South Korea (Korean: 한국/韓國, RR: Hanguk; literally 남한/南韓, RR: Namhan, or 남조선/南朝鮮, MR: Namchosŏn in North Korean usage), officially the Republic of Korea (ROK; Korean: 대한민국/大韓民國, RR: Daehan Minguk), is a country in East Asia, constituting the southern part of the Korean Peninsula, and sharing a land border with North Korea. 25 million people, around half of the country's population of more than 51 million people, live in the Seoul Capital Area, the fifth-largest metropolitan area in the world.",
                 "name": "South Korea"
               },
               {
                 "lang": "ru",
-                "capital": "Рим",
-                "description": "Ита́лия (итал. Italia [iˈtaːlja]), официальное название — Италья́нская Респу́блика (итал. Repubblica Italiana [reˈpubːlika itaˈljaːna]) — государство в Южной Европе, в центре Средиземноморья. Входит в Евросоюз и НАТО с момента их создания, является третьей по величине экономикой еврозоны.  Граничит с Францией на северо-западе (протяжённость границы — 488 км), Швейцарией (740 км) и Австрией (430 км) — на севере, Словенией — на северо-востоке (232 км).  Внутри территории Италии находятся два государства-анклава: государство Сан-Марино и расположенное внутри территории Рима ассоциированное с Италией государство Ватикан, с каждым из которых Италия имеет внутреннюю границу протяжённостью соответственно 39 км и 3,2 км.  Занимает Апеннинский полуостров, крайний северо-запад Балканского полуострова, Паданскую равнину, южные склоны Альп, острова Сицилия, Сардиния и ряд мелких островов.  На территории Италии находится 55 памятников Всемирного наследия ЮНЕСКО — Италия разделяет с Китаем первое место по их количеству.",
-                "name": "Италия"
+                "capital": "Сеул",
+                "description": "Респу́блика Коре́я (кор. 대한민국?, 大韓民國? Тэханмингук, устар. Коре́йская Респу́блика) — государство в Восточной Азии, широко известное под неофициальным названием Ю́жная Коре́я. Расположено в южной части Корейского полуострова. Имеет сухопутную границу с Корейской Народно-Демократической Республикой (государства разделены демилитаризованной зоной) и морскую — с Японией. С запада страна омывается Жёлтым морем, с востока — Японским морем, а с юга — Корейским проливом и Восточно-Китайским морем",
+                "name": "Южная Корея"
               },
               {
                 "lang": "fr",
-                "capital": "Madrid",
-                "description": "L'Espagne, en forme longue le royaume d'Espagne (respectivement en espagnol : España Écouter et Reino de España), est un pays d'Europe du Sud — et, selon les définitions, d'Europe de l'Ouest — qui occupe la plus grande partie de la péninsule Ibérique. En 2019, il s'agissait du vingt-huitième pays le plus peuplé du monde, avec 47 millions d'habitants.",
-                "name": "Espagne"
+                "capital": "Séoul",
+                "description": "La Corée du Sud (en coréen Hanguk, 한국 (hangeul), 韓國 (hanja) Écouter), officiellement la république de Corée4,5,6 (en coréen Daehan Minguk, 대한민국 (hangeul), 大韓民國 (hanja) Écouter), est un pays d'Asie de l'Est qui couvre la moitié sud de la péninsule coréenne. Sa capitale est Séoul. La langue officielle est le coréen, dont l'écriture est le hangeul ou hangul et la monnaie le won. L'animal représentant le pays est le tigre.",
+                "name": "Corée du Sud"
               }
             ]
         },
@@ -256,27 +256,27 @@ function App() {
               "type": "Point"
             },
             "imageUrl": "https://www.atlanticcouncil.org/wp-content/uploads/2020/09/Rome-coroavirus-large-1024x683.jpg",
-            "videoUrl": "https://youtu.be/FlRwssZYRM0",
+            "videoUrl": "https://www.youtube.com/watch?v=CxuiFNYnEr4",
             "currency": "EUR",
             "ISOCode": "JPN",
             "localizations": [
               {
                 "lang": "en",
                 "capital": "Tokyo",
-                "description": "Italy (Italian: Italia [iˈtaːlja]), officially the Italian Republic (Italian: Repubblica Italiana [reˈpubːlika itaˈljaːna]), is a country consisting of a peninsula delimited by the Alps and several islands surrounding it. Italy is located in Southern Europe, and is also considered part of Western Europe. A unitary parliamentary republic with Rome as its capital, the country covers a total area of 301,340 km2 (116,350 sq mi) and shares land borders with France, Switzerland, Austria, Slovenia, and the enclaved microstates of Vatican City and San Marino. Italy has a territorial enclave in Switzerland (Campione) and a maritime exclave in Tunisian waters (Lampedusa). With around 60 million inhabitants, Italy is the third-most populous member state of the European Union.",
+                "description": "Japan (Japanese: 日本, Nippon [ɲippoꜜɴ] (About this soundlisten) or Nihon [ɲihoꜜɴ] (About this soundlisten)) is an island country in East Asia, located in the northwest Pacific Ocean. It is bordered on the west by the Sea of Japan, and extends from the Sea of Okhotsk in the north toward the East China Sea and Taiwan in the south. Part of the Ring of Fire, Japan spans an archipelago of 6852 islands covering 377,975 square kilometers (145,937 sq mi); the five main islands are Hokkaido, Honshu, Shikoku, Kyushu, and Okinawa. Tokyo is Japan's capital and largest city; other major cities include Yokohama, Osaka, Nagoya, Sapporo, Fukuoka, Kobe, and Kyoto.",
                 "name": "Japan"
               },
               {
                 "lang": "ru",
-                "capital": "Рим",
-                "description": "Ита́лия (итал. Italia [iˈtaːlja]), официальное название — Италья́нская Респу́блика (итал. Repubblica Italiana [reˈpubːlika itaˈljaːna]) — государство в Южной Европе, в центре Средиземноморья. Входит в Евросоюз и НАТО с момента их создания, является третьей по величине экономикой еврозоны.  Граничит с Францией на северо-западе (протяжённость границы — 488 км), Швейцарией (740 км) и Австрией (430 км) — на севере, Словенией — на северо-востоке (232 км).  Внутри территории Италии находятся два государства-анклава: государство Сан-Марино и расположенное внутри территории Рима ассоциированное с Италией государство Ватикан, с каждым из которых Италия имеет внутреннюю границу протяжённостью соответственно 39 км и 3,2 км.  Занимает Апеннинский полуостров, крайний северо-запад Балканского полуострова, Паданскую равнину, южные склоны Альп, острова Сицилия, Сардиния и ряд мелких островов.  На территории Италии находится 55 памятников Всемирного наследия ЮНЕСКО — Италия разделяет с Китаем первое место по их количеству.",
-                "name": "Италия"
+                "capital": "Токио",
+                "description": "Япо́ния (яп. 日本 Нихон, Ниппон, букв. «место, где восходит Солнце»[8]), официальное название — Госуда́рство Япо́ния (яп. 日本国 «Нихон коку», «Ниппон коку» (инф.)), — островное государство в Восточной Азии. Находится в Тихом океане к востоку от Японского моря, Китая, Северной и Южной Кореи, России. Занимает территорию от Охотского моря на севере до Восточно-Китайского моря и Тайваня на юге. Поэтическое название — Страна восходящего солнца.",
+                "name": "Япония"
               },
               {
                 "lang": "fr",
-                "capital": "Madrid",
-                "description": "L'Espagne, en forme longue le royaume d'Espagne (respectivement en espagnol : España Écouter et Reino de España), est un pays d'Europe du Sud — et, selon les définitions, d'Europe de l'Ouest — qui occupe la plus grande partie de la péninsule Ibérique. En 2019, il s'agissait du vingt-huitième pays le plus peuplé du monde, avec 47 millions d'habitants.",
-                "name": "Espagne"
+                "capital": "Tokyo",
+                "description": "Le Japon, en forme longue l'État du Japon, en japonais Nihon ou Nippon (日本?) et Nihon-koku ou Nippon-koku (日本国?) respectivement, est un pays insulaire de l'Asie de l'Est, situé entre l'océan Pacifique et la mer du Japon, à l'est de la Chine, de la Corée du Sud et de la Russie, et au nord de Taïwan. Étymologiquement, les kanjis (caractères chinois) qui composent le nom du Japon signifient « pays (国, kuni) d'origine (本, hon) du Soleil (日, ni) » ; c'est ainsi que le Japon est désigné comme le « pays du soleil levant ».",
+                "name": "Japon"
               }
             ]
         },
