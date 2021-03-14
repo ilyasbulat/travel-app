@@ -59,7 +59,7 @@ const CountryPage = ({countryCards}) => {
 
 
 
-  console.log('ISOCODE', countryCards[id-1].ISOCode)
+  // console.log('ISOCODE', countryCards[id-1].ISOCode)
     return (
         <div className={styles.country}>
             <div className={styles.country__name}>
