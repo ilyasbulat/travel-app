@@ -90,19 +90,7 @@ const CountryPage = ({countryCards}) => {
       setWeatherDescr(data.weather[0].description)
       setHumidity(data.main.humidity)
       setWindSpeed(data.wind.speed)
-      // setIcon(`owf-${data.weather[0].id}`)
-      if (weatherDescr.includes('clear')) {
-        setIcon('Sunny')
-      } else if (weatherDescr.includes('cloud')) {
-        setIcon('Cloudy')
-      } else if (weatherDescr.includes('mist') || weatherDescr.includes('rain')) {
-        setIcon('Rain')
-      } else if (weatherDescr.includes('snow')) {
-        setIcon('Snow')
-      } else {
-        setIcon('Cloudy')
-      }
-      console.log("ICON242424", icon)
+
     } catch {
       console.log('Chet s APIWKOI')
     }
@@ -118,6 +106,21 @@ const CountryPage = ({countryCards}) => {
     console.log("CHEEEECKWEATHER")
   }, [countryCard])
   
+  useEffect(() => {
+    if (weatherDescr.includes('clear')) {
+      setIcon('Sunny')
+      console.log("ICON242424CHETA<asd", icon)
+    } else if (weatherDescr.includes('cloud')) {
+      setIcon('Cloudy')
+    } else if (weatherDescr.includes('mist') || weatherDescr.includes('rain')) {
+      setIcon('Rain')
+    } else if (weatherDescr.includes('snow')) {
+      setIcon('Snow')
+    } else {
+      setIcon('Cloudy')
+      console.log("ICON242424", icon)
+    }
+  }, [weatherDescr])
   
   useEffect(() => {
     fetch(
