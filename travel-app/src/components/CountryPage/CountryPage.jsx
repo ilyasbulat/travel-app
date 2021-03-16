@@ -135,6 +135,19 @@ const CountryPage = ({countryCards}) => {
       console.log('CURRENCY', currency)
   }, [countryCard])
 
+  const [lang, setLang] = useState(localStorage.getItem('lang') || 'en');
+  const [number,setNumber] = useState(0);
+
+  useEffect(() => {
+      if (lang === 'ru') {
+          setNumber(1)
+      } else if (lang === 'fr') {
+          setNumber(2)
+      } else if (lang === 'en') {
+          setNumber(0)
+      }
+  }, [lang])
+
  
     return (
       <>
@@ -152,13 +165,13 @@ const CountryPage = ({countryCards}) => {
          <div className={styles.main}>
            <div className={styles.main__text}>
             <div className={styles.country__name}>
-                  {countryCard.localizations[0].name}
+                  {countryCard.localizations[number].name}
               </div>
               <div className={styles.country__capital}>
-                  {countryCard.localizations[0].capital}
+                  {countryCard.localizations[number].capital}
               </div>
               <div className={styles.country__descr}>
-                  {countryCard.localizations[0].description}
+                  {countryCard.localizations[number].description}
               </div>
            </div>
 

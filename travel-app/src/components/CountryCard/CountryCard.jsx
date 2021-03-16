@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './CountryCard.module.scss'
 import { Link } from 'react-router-dom';
 
 const CountryCard = ({card}) => {
+    const [lang, setLang] = useState(localStorage.getItem('lang') || 'en');
+    const [number,setNumber] = useState(0);
+
+    useEffect(() => {
+        if (lang === 'ru') {
+            setNumber(1)
+        } else if (lang === 'fr') {
+            setNumber(2)
+        } else if (lang === 'en') {
+            setNumber(0)
+        }
+    }, [lang])
     
+
+
     return (
         <Link to={`/country/${card._id}`} className={styles.main}>
             <div className={styles.card} style={{ 
@@ -16,11 +30,27 @@ const CountryCard = ({card}) => {
                 height: '100%'
               }}>
                 {/* <img src={`${card.imageUrl}`} alt="PICTURE" className={styles.card_img}/> */}
+                {/* {
+                    card.localizations.filter((cardLang) => {
+                        return (cardLang.lang === localStorage.getItem('lang')) 
+                        // return (
+                        //     <>
+                        //     <div className={styles.card__name}>
+                        //         {card.localizations[0].name}
+                        //     </div>
+                        //     <div className={styles.card__capital}>
+                        //         {card.localizations[0].capital}
+                        //     </div>
+                        //     </>
+                        // )
+                    })
+                    
+                } */}
                 <div className={styles.card__name}>
-                    {card.localizations[0].name}
+                    {card.localizations[number].name}
                 </div>
                 <div className={styles.card__capital}>
-                    {card.localizations[0].capital}
+                    {card.localizations[number].capital}
                 </div>
                 
             </div>
