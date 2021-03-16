@@ -7,10 +7,42 @@
 }
 
 .cards {
-   
     display: grid;
-    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    // grid-template: repeat(2, 1fr) / repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
     width: 1000px;
     height: 650px;
 }
+
+@media (max-width: 1024px) {
+    .cards {
+        max-width: 800px;
+        height: 600px;
+    }
+} 
+
+@media (max-width: 830px) {
+    .cards {
+        max-width: 600px;
+        height: 600px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
+
+
+@media (max-width: 640px) {
+    .cards {
+        max-width: 400px;
+        height: 600px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+
+@media (max-width: 430px) {
+    .cards {
+        max-width: 320px;
+        min-height: 1500px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+} 

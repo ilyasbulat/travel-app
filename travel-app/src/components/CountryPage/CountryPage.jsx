@@ -139,61 +139,79 @@ const CountryPage = ({countryCards}) => {
     return (
       <>
       {
-        Object.keys(countryCard).length === 0 && countryCard.constructor === Object ? '' :
-        <div className={styles.country}>
-        <div className={styles.country__name}>
-            {countryCard.localizations[0].name}
-        </div>
-        <div className={styles.country__capital}>
-            {countryCard.localizations[0].capital}
-        </div>
-        <div className={styles.country__descr}>
-            {countryCard.localizations[0].description}
-        </div>
-        <ReactPlayer
-            url={countryCard.videoUrl}
-            controls={true}
-        />
-        <Map coords={countryCard.capitalLocation.coordinates} ISOCode={countryCard.ISOCode}/>
-        <div className={styles.weather_widget}>
+      Object.keys(countryCard).length === 0 && countryCard.constructor === Object ? '' :
+      <div className={styles.country} style={{ 
+        backgroundImage: `url(${countryCard.imageUrl})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        // width:'250px',
+        // height: '320px' 
+        width: '100%',
+        height: '100%'
+      }}>
+         <div className={styles.main}>
+           <div className={styles.main__text}>
+            <div className={styles.country__name}>
+                  {countryCard.localizations[0].name}
+              </div>
+              <div className={styles.country__capital}>
+                  {countryCard.localizations[0].capital}
+              </div>
+              <div className={styles.country__descr}>
+                  {countryCard.localizations[0].description}
+              </div>
+           </div>
 
-          { icon === 'Sunny' ? <Sunny/> : icon === 'Cloudy' ? <Cloudy/> : icon === 'Rain' ? <Rain/> : icon === 'Snow' ? <Snow/> :null }
-            <div>
-              {weatherDescr}
+            <ReactPlayer
+                url={countryCard.videoUrl}
+                controls={true}
+                className={styles.main__player}
+                width= '85%'
+            />
+            <Map coords={countryCard.capitalLocation.coordinates} ISOCode={countryCard.ISOCode}/>
+         </div>
+
+        <div className={styles.widgets}>
+            <div className={styles.weather_widget}>
+
+            { icon === 'Sunny' ? <Sunny/> : icon === 'Cloudy' ? <Cloudy/> : icon === 'Rain' ? <Rain/> : icon === 'Snow' ? <Snow/> :null }
+              <div>
+                {weatherDescr}
+              </div>
+              <div>
+                {temperature}°C
+              </div>
+              <div>
+                {humidity}% humidity
+              </div>
+              <div>
+                {windSpeed} m/s
+              </div>
             </div>
+
+            <div className={styles.currency}>
+            <div>Currency: {countryCard.currency}</div>
+            {
+            currency.conversion_rates ? 
             <div>
-              {temperature}°C
+              <div>
+                1 {countryCard.currency} = {currency.conversion_rates.USD}$
+              </div>
+              <div>
+                1$ = {(1/currency.conversion_rates.USD).toFixed(2)} {countryCard.currency}
+              </div>
+            </div>  : ''
+            }
+
             </div>
-            <div>
-              {humidity}% humidity
-            </div>
-            <div>
-              {windSpeed} m/s
+
+            <div className={styles.time}>
+            {date.toLocaleDateString('en-EN', options)}
             </div>
         </div>
 
-      <div className={styles.currency}>
-        <div>Currency: {countryCard.currency}</div>
-        {
-          currency.conversion_rates ? 
-          <div>
-            <div>
-              1 {countryCard.currency} = {currency.conversion_rates.USD}$
-            </div>
-            <div>
-              1$ = {(1/currency.conversion_rates.USD).toFixed(2)} {countryCard.currency}
-            </div>
-          </div>  : ''
-        }
-        
+
       </div>
-
-      <div className={styles.time}>
-        {date.toLocaleDateString('en-EN', options)}
-      </div>
-
-
-    </div>
     }     
       </>
       
