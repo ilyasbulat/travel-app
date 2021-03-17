@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 import ReactPlayer from "react-player"
 import Map from '../Map/Map'
 import { Sunny, Cloudy, Rain, Snow } from 'weather-styled-icon';
+import { Parallax } from 'react-parallax';
 
 
 const CountryPage = ({countryCards}) => {
@@ -20,6 +21,7 @@ const CountryPage = ({countryCards}) => {
     const [currency, setCurrency] = useState({})
     const [lang, setLang] = useState(localStorage.getItem('lang') || 'en');
     const [number,setNumber] = useState(0);
+    
 
    
     useEffect(() => {
@@ -155,14 +157,15 @@ const CountryPage = ({countryCards}) => {
       <>
       {
       Object.keys(countryCard).length === 0 && countryCard.constructor === Object ? '' :
-      <div className={styles.country} style={{ 
-        backgroundImage: `url(${countryCard.imageUrl})`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        // width:'250px',
-        // height: '320px' 
-        width: '100%',
-        height: '100%'
+      <Parallax blur={1} bgImage={countryCard.imageUrl} bgImageAlt="the cat" strength={-500}>
+        <div className={styles.country} style={{ 
+        // backgroundImage: `url(${countryCard.imageUrl})`,
+        // backgroundRepeat: 'no-repeat',
+        // backgroundSize: 'cover',
+        // // width:'250px',
+        // // height: '320px' 
+        // width: '100%',
+        // height: '100%'
       }}>
          <div className={styles.main}>
            <div className={styles.main__text}>
@@ -229,6 +232,8 @@ const CountryPage = ({countryCards}) => {
 
 
       </div>
+      </Parallax>
+    
     }     
       </>
       

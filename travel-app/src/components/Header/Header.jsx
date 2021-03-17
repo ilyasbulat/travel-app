@@ -6,15 +6,20 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <Link to={`/`} >
+     
             <div className={styles.header}>
-                <div>
+                <Link to={`/`} >
+                {/* <div className={styles.logo} style={{
+                    backgroundImage: "url(globe.svg)"
+                }}>
+                      </div> */}
                     <img src="./globe.svg" alt="Logo" className={styles.logo}/>
-                </div>
+              
+                </Link>
                 <div></div>
                 <SelectLang />
             </div>
-        </Link>
+       
 
     )
 }
