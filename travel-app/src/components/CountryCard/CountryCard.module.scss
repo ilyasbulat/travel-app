@@ -1,0 +1,39 @@
+.card {
+    width: 400px;
+    height: 250px;
+    // background-color: blueviolet;
+    &:hover {
+        background-color: red;
+    }
+
+    &__name {
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 26px;
+        color: #ffffff;
+    }
+
+    &__capital {
+        padding-top: 10px;
+        padding-left: 10px;
+        font-size: 18px;
+        color: #ffffff;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+  .main {
+      overflow: hidden;
+  }
+  .main:hover .card {
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
+  }
+
+  .card {
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
