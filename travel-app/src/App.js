@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Header from './components/Header/Header'
 import MainPage from './components/MainPage/MainPage'
 import CountryPage from './components/CountryPage/CountryPage'
+import Footer from './components/Footer/Footer'
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
@@ -313,7 +314,9 @@ function App() {
         <Route exact path="/" component={() => <MainPage countryCards={countryCards} />} />
         <Route path="/country/:id" component={() => <CountryPage countryCards={countryCards} />} />
       </Switch>
+      <Footer />
     </LangContext.Provider>
+
 
 
     
