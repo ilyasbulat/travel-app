@@ -301,10 +301,7 @@ function App() {
     }, [])
   
    const [language, setLanguage] = useState(localStorage.getItem('lang') || 'en')
-  //  let state = {
-  //   lang: localStorage.getItem('lang') || 'en',
-  //   setLang: () => {}
-  //  }
+
   const value = { language, setLanguage }
   console.log('S-T-A-T-E', value)
 

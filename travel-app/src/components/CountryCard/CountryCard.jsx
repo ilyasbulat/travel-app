@@ -31,23 +31,7 @@ const CountryCard = ({card}) => {
                 width: '100%',
                 height: '100%'
               }}>
-                {/* <img src={`${card.imageUrl}`} alt="PICTURE" className={styles.card_img}/> */}
-                {/* {
-                    card.localizations.filter((cardLang) => {
-                        return (cardLang.lang === localStorage.getItem('lang')) 
-                        // return (
-                        //     <>
-                        //     <div className={styles.card__name}>
-                        //         {card.localizations[0].name}
-                        //     </div>
-                        //     <div className={styles.card__capital}>
-                        //         {card.localizations[0].capital}
-                        //     </div>
-                        //     </>
-                        // )
-                    })
-                    
-                } */}
+   
                 <div className={styles.card__name}>
                     {card.localizations[number].name}
                 </div>

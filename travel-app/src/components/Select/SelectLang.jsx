@@ -9,7 +9,10 @@ import { LangContext } from '../../App'
 const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
-    minWidth: 120
+    minWidth: 120,
+  },
+  textColor: {
+    color: '#ffffff'
   }
 }));
 
@@ -55,26 +58,10 @@ export default function SelectLang() {
 
   return (
     <div>
-      {/* <LangContext.Consumer>
-        <FormControl className={classes.formControl}>
-          <InputLabel id="demo-controlled-open-select-label">Language</InputLabel>
-          <Select
-            labelId="demo-controlled-open-select-label"
-            id="demo-controlled-open-select"
-            open={open}
-            onClose={handleClose}
-            onOpen={handleOpen}
-            value={lang}
-            onChange={handleChange}
-          >
-            <MenuItem value={'en'}>English</MenuItem>
-            <MenuItem value={'ru'}>Русский</MenuItem>
-            <MenuItem value={'fr'}>France</MenuItem>
-          </Select>
-        </FormControl>
-      </LangContext.Consumer> */}
       <FormControl className={classes.formControl}>
-        <InputLabel id="demo-controlled-open-select-label">Language</InputLabel>
+        <InputLabel id="demo-controlled-open-select-label" className={classes.textColor}>
+          { lang === 'ru' ? 'Язык' : lang === 'fr' ? 'Langue' : 'Language' }
+        </InputLabel>
         <Select
           labelId="demo-controlled-open-select-label"
           id="demo-controlled-open-select"
@@ -83,6 +70,7 @@ export default function SelectLang() {
           onOpen={handleOpen}
           value={lang}
           onChange={handleChange}
+          className={classes.textColor}
         >
           <MenuItem value={'en'}>English</MenuItem>
           <MenuItem value={'ru'}>Русский</MenuItem>

@@ -18,6 +18,8 @@ const CountryPage = ({countryCards}) => {
     const [windSpeed, setWindSpeed] = useState('');
     // const [countryCard] = countryCards.filter((card) =>  card._id === id )
     const [currency, setCurrency] = useState({})
+    const [lang, setLang] = useState(localStorage.getItem('lang') || 'en');
+    const [number,setNumber] = useState(0);
 
    
     useEffect(() => {
@@ -78,7 +80,7 @@ const CountryPage = ({countryCards}) => {
 
 
   async function getWeather() {  
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${countryCard.localizations[0].name}&lang=en&appid=29055efa6dd5987fbe326348106401e0&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${countryCard.localizations[0].capital}&lang=${lang}&appid=29055efa6dd5987fbe326348106401e0&units=metric`;
     const res = await fetch(url);
     const data = await res.json(); 
  
@@ -107,12 +109,13 @@ const CountryPage = ({countryCards}) => {
   }, [countryCard])
   
   useEffect(() => {
-    if (weatherDescr.includes('clear')) {
+    if (weatherDescr.includes('clear') || weatherDescr.includes('ясно') || weatherDescr.includes('ciel')) {
       setIcon('Sunny')
       console.log("ICON242424CHETA<asd", icon)
     } else if (weatherDescr.includes('cloud')) {
       setIcon('Cloudy')
-    } else if (weatherDescr.includes('mist') || weatherDescr.includes('rain')) {
+    } else if (weatherDescr.includes('mist') || weatherDescr.includes('rain') || weatherDescr.includes('пасмурно') 
+    || weatherDescr.includes('couvert') || weatherDescr.includes('pluie')) {
       setIcon('Rain')
     } else if (weatherDescr.includes('snow')) {
       setIcon('Snow')
@@ -135,8 +138,7 @@ const CountryPage = ({countryCards}) => {
       console.log('CURRENCY', currency)
   }, [countryCard])
 
-  const [lang, setLang] = useState(localStorage.getItem('lang') || 'en');
-  const [number,setNumber] = useState(0);
+
 
   useEffect(() => {
       if (lang === 'ru') {
@@ -195,15 +197,17 @@ const CountryPage = ({countryCards}) => {
                 {temperature}°C
               </div>
               <div>
-                {humidity}% humidity
+                {lang ==='ru' ? `${humidity}% влажности` : lang === 'fr' ? `${humidity}% d'humidité` : `${humidity}% humidity`}
               </div>
               <div>
-                {windSpeed} m/s
+               
+                {lang ==='ru' ? `${windSpeed} м/c` : `${windSpeed} m/s`}
               </div>
             </div>
 
             <div className={styles.currency}>
-            <div>Currency: {countryCard.currency}</div>
+            <div>{lang ==='ru' ? 'Валюта' : lang ==='fr' ? 'Devise' : 'Currency'}: {countryCard.currency}</div>
+            
             {
             currency.conversion_rates ? 
             <div>
@@ -219,7 +223,7 @@ const CountryPage = ({countryCards}) => {
             </div>
 
             <div className={styles.time}>
-            {date.toLocaleDateString('en-EN', options)}
+            {date.toLocaleDateString(`${lang}-EN`, options)}
             </div>
         </div>
 
