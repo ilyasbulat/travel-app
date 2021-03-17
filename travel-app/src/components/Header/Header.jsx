@@ -9,10 +9,6 @@ const Header = () => {
      
             <div className={styles.header}>
                 <Link to={`/`} >
-                {/* <div className={styles.logo} style={{
-                    backgroundImage: "url(globe.svg)"
-                }}>
-                      </div> */}
                     <img src="./globe.svg" alt="Logo" className={styles.logo}/>
               
                 </Link>

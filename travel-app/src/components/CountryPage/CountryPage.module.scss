@@ -151,3 +151,20 @@
         margin: 0 auto;
     }
 } 
+
+.sliderimg {
+    width: 100%;
+    height: 300px;
+    object-fit: cover
+}
+
+.descr {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 16px;
+}
+
+.Alice {
+    margin-top: 20px;
+}

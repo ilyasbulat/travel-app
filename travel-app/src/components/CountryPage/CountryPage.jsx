@@ -6,6 +6,8 @@ import ReactPlayer from "react-player"
 import Map from '../Map/Map'
 import { Sunny, Cloudy, Rain, Snow } from 'weather-styled-icon';
 import { Parallax } from 'react-parallax';
+import AliceCarousel from 'react-alice-carousel';
+import "react-alice-carousel/lib/alice-carousel.css";
 
 
 const CountryPage = ({countryCards}) => {
@@ -21,7 +23,7 @@ const CountryPage = ({countryCards}) => {
     const [currency, setCurrency] = useState({})
     const [lang, setLang] = useState(localStorage.getItem('lang') || 'en');
     const [number,setNumber] = useState(0);
-    
+    const [sight, setSight] = useState([])
 
    
     useEffect(() => {
@@ -152,6 +154,19 @@ const CountryPage = ({countryCards}) => {
       }
   }, [lang])
 
+
+  useEffect(() => {
+    fetch(
+      `https://rs-travel-app-api.herokuapp.com/countries/${id}`,
+      {
+        method: 'GET',
+      }
+    )
+      .then((res) => res.json())
+      .then((data) => setSight(data))
+
+      
+  }, [])
  
     return (
       <>
@@ -184,9 +199,39 @@ const CountryPage = ({countryCards}) => {
                 url={countryCard.videoUrl}
                 controls={true}
                 className={styles.main__player}
-                width= '85%'
+                width= '100%'
             />
-            <Map coords={countryCard.capitalLocation.coordinates} ISOCode={countryCard.ISOCode}/>
+           
+          <div className={styles.Alice}>
+
+           {
+                sight.length === 0 ? '' : 
+                <AliceCarousel autoPlay mouseTracking autoPlayInterval="3000" disableButtonsControls='true' styles={{
+                  marginTop: "10px"
+                }}>
+                {
+                  sight.map((item) => {
+                    return (
+                      <div>
+                      <img src={item.imageUrl} className={styles.sliderimg} alt=""/>
+                      <div className={styles.descr}>{item.localizations[number].description}</div>
+                      </div>
+                    )
+                  })
+            
+                }
+  
+              </AliceCarousel>
+            }
+
+          </div>  
+            
+
+
+          <Map coords={countryCard.capitalLocation.coordinates} ISOCode={countryCard.ISOCode}/>
+
+
+
          </div>
 
         <div className={styles.widgets}>
