@@ -5,6 +5,11 @@ import CountryPage from './components/CountryPage/CountryPage'
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 
+export const LangContext = React.createContext({
+  language: localStorage.getItem('lang') || 'en',
+  setLanguage: () => {}
+});
+
 function App() {
 
     // const countryCards = [
@@ -294,22 +299,28 @@ function App() {
         .then((res) => res.json())
         .then((data) => setCountryCards(data))
     }, [])
-
+  
+   const [language, setLanguage] = useState(localStorage.getItem('lang') || 'en')
+  //  let state = {
+  //   lang: localStorage.getItem('lang') || 'en',
+  //   setLang: () => {}
+  //  }
+  const value = { language, setLanguage }
+  console.log('S-T-A-T-E', value)
 
   return (
-   <>
-    <Header />
-    <Switch>
-    
-      {/* <MainPage /> */}
-      {/* <Route exact path="/" component={MainPage} /> */}
-      {/* <Route path="/country/:id" component={CountryPage} /> */}
-      <Route exact path="/" component={() => <MainPage countryCards={countryCards} />} />
-      <Route path="/country/:id" component={() => <CountryPage countryCards={countryCards} />} />
-    </Switch>
 
-    </>
-  );
+   <LangContext.Provider value={value}>
+    <Header />
+      <Switch>
+        <Route exact path="/" component={() => <MainPage countryCards={countryCards} />} />
+        <Route path="/country/:id" component={() => <CountryPage countryCards={countryCards} />} />
+      </Switch>
+    </LangContext.Provider>
+
+
+    
+  )
 }
 
 export default App;

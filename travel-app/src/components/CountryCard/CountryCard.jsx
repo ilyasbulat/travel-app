@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import styles from './CountryCard.module.scss'
 import { Link } from 'react-router-dom';
-
+import { LangContext } from '../../App'
 const CountryCard = ({card}) => {
     const [lang, setLang] = useState(localStorage.getItem('lang') || 'en');
     const [number,setNumber] = useState(0);
-
+    // const [state, setState] = useState(useContext(LangContext))
+    let context = useContext(LangContext)
+    console.log('conxtext', context)
     useEffect(() => {
         if (lang === 'ru') {
             setNumber(1)
@@ -14,7 +16,7 @@ const CountryCard = ({card}) => {
         } else if (lang === 'en') {
             setNumber(0)
         }
-    }, [lang])
+    }, [context])
     
 
 
